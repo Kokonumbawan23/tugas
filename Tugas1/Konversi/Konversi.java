@@ -41,6 +41,19 @@ public class Konversi {
           
         this.celcius = n;  
       }
+    
+      public String kondisiAir(){
+          
+          if(this.celcius >= 100){
+              return "Kondisi air mendidih";
+          }
+          else if(this.celcius <= 0){
+              return "Kondisi air beku";
+          }
+          else{
+              return "Kondisi air normal";
+          }
+    }
       
       public void printConvert(){
       
@@ -52,7 +65,7 @@ public class Konversi {
         System.out.println("Dalam Fahrenheit : " + this.fahrenheit + "°F");
         System.out.println("Dalam Reamur : " + this.reamur + "°R");
         System.out.println("Dalam Kelvin : " + this.kelvin + "°K");
-        
+        System.out.println(kondisiAir());
       
       
       }
