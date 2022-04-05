@@ -175,10 +175,10 @@ public class KuisPrakPBO {
         System.out.println("Nilai Akhir : " + web.getNilai());
         if(web.getNilai()>= 85){
             System.out.println("Keterangan : Lolos");
-            System.out.println("Selamat kepada " + web.getNama() + " telah diterima sebagai Android");
+            System.out.println("Selamat kepada " + web.getNama() + " telah diterima sebagai Web");
         }else{
             System.out.println("Keterangan : Gagal");
-            System.out.println("Mohon maaf kepada " + web.getNama() + " telah ditolak sebagai Android");
+            System.out.println("Mohon maaf kepada " + web.getNama() + " telah ditolak sebagai Web");
         } 
     
     }
