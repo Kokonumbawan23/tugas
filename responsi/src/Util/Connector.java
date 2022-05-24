@@ -15,7 +15,7 @@ import java.sql.Statement;
  */
 public class Connector {
     
-    String DBurl = "jdbc:mysql://localhost/responsi";
+    String DBurl = "jdbc:mysql://localhost/movie_db";
     String DBusername = "root";
     String DBpassword = "";
     public Connection koneksi;
