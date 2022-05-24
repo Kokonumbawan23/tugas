@@ -49,7 +49,7 @@ public class MovieModel {
            
            stmt = (Statement) con.koneksi.createStatement();
             
-            String data[][] = new String[getBanyakData()][5]; //baris, kolom nya ada 5
+            String data[][] = new String[getBanyakData()][5]; //baris, kolom nya ada 4
             
             String query = "select * from movie"; 
             ResultSet resultSet = stmt.executeQuery(query);
@@ -98,7 +98,7 @@ public class MovieModel {
             
             else{
                 
-                String query = "UPDATE movie SET alur='" + alur + "', penokohan='" + penokohan + "', nilai='"+ nilai+"' WHERE judul= '" + nama + "'" ;  
+                String query = "UPDATE movie SET alur='" + alur + "', penokohan='" + penokohan + "',akting = '" + akting + "',nilai='"+ nilai+"' WHERE judul= '" + nama + "'" ;  
                 stmt.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "update berhasil");
             }
