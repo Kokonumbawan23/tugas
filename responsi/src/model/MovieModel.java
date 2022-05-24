@@ -49,7 +49,7 @@ public class MovieModel {
            
            stmt = (Statement) con.koneksi.createStatement();
             
-            String data[][] = new String[getBanyakData()][5]; //baris, kolom nya ada 4
+            String data[][] = new String[getBanyakData()][5]; //baris, kolom nya ada 5
             
             String query = "select * from movie"; 
             ResultSet resultSet = stmt.executeQuery(query);
