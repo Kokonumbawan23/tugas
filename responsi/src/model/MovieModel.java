@@ -49,11 +49,12 @@ public class MovieModel {
            
            stmt = (Statement) con.koneksi.createStatement();
             
-            String data[][] = new String[getBanyakData()][4]; //baris, kolom nya ada 4
+            String data[][] = new String[getBanyakData()][5]; //baris, kolom nya ada 4
             
-            String query = "Select * from movie"; 
+            String query = "select * from movie"; 
             ResultSet resultSet = stmt.executeQuery(query);
             
+           
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("judul"); //harus sesuai nama kolom di mysql
                 data[jmlData][1] = String.valueOf(resultSet.getDouble("alur"));                
@@ -62,6 +63,8 @@ public class MovieModel {
                 data[jmlData][4] = String.valueOf(resultSet.getDouble("nilai"));
                 jmlData++;
             }
+            
+//             System.out.println(data[jmlData][1]);
             
             JOptionPane.showMessageDialog(null, "baca berhasil");
             return data;
